@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Janies Lab</title>
+    <meta name="description" content="Webpage for the lab of Dr. Daniel Janies">
+    <meta name="keywords" content="bioiformatics, genomics, computational biology, visualization, machine learning, echinoderms, infectious disease">
+    <link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed-114x114.png" sizes="114x114" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed-144x144.png" sizes="144x144" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed-72x72.png" sizes="72x72" />
+	<link rel="shortcut icon" href="https://www.uncc.edu/sites/www.uncc.edu/files/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- START: header -->
+  
+  <div class="probootstrap-loader"></div>
+
+  <header role="banner" class="probootstrap-header" style="background-color:#004525;">
+    <div class="container">
+        <a href="index.html" class="probootstrap-logo">Janies Lab<span>.</span></a>
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li><a href="index.html">Home</a></li>
+            <!--<li><a href="projects.html">Projects</a></li>-->
+            <li class="active"><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="https://cci.uncc.edu/bioinformatics/47/3" target="_blank">UNCC Bioinformatics</a></li>
+          </ul>
+          <ul class="probootstrap-right-nav hidden-xs">
+            <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
+            <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
+          </ul>
+          <div class="extra-text visible-xs"> 
+            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <h5>Address</h5>
+            <p>9331 Robert D. Snyder Rd <br> Charlotte, NC 28223</p>
+            <h5>Connect</h5>
+            <ul class="social-buttons">
+             <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+             <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
+             <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+  </header>
+  <!-- END: header -->
+  <section class="probootstrap-slider flexslider">
+    <ul class="slides">
+      <li style="background-image: url(img/PapersHeader.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="slides-text probootstrap-animate">
+                <h2 style="background-color:#004525;">Research</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- END: slider  -->
+
+
+  <section class="probootstrap-section">
+    <div class="container">
+	<script>
+		function SearchFunction() {
+		  // Declare variables 
+		  var input, filter, table, tr, td, i;
+		  input = document.getElementById("SearchInput");
+		  filter = input.value.toUpperCase();
+		  table = document.getElementById("SearchTable");
+		  tr = table.getElementsByTagName("tr");
+
+		  // Loop through all table rows, and hide those who don't match the search query
+		  for (i = 0; i < tr.length; i++) {
+		    td = tr[i].getElementsByTagName("td")[0];
+		    if (td) {
+		      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		        tr[i].style.display = "";
+		      } else {
+		        tr[i].style.display = "none";
+		      }
+		    } 
+		  }
+		}
+	</script>
+	 <input type="text" id="SearchInput" onkeyup="SearchFunction()" placeholder="Keyword Search...">
+	 <table id="SearchTable">
+	   <tr class="header">
+         <th style="width:90% text-align: left;">Citation</th>
+         <th style="width:10% text-align: center;">Link</th>
+       </tr>
+ <tr>
+	<td>Carter, T., Kebede, S. Lopez, K., Bonnell, V., Damodaran, L., Aseffa, A., Janies, D. in press. Glucose-6-phosphate dehydrogenase deficiency (G6PD) genetic variants in malaria patients in southwestern Ethiopia.  American Journal of Tropical Medicine & Hygiene.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Linchangco, G., Foltz, D., Reid, R., Williams, J., Nodzak, C., Kerr, A., Miller, A., Hunter, R., Wilson, N., Nielsen, W., Mah, C., Rouse, G., Wray, G., Janies, D. 2017. The phylogeny of extant starfish (Asteroidea: Echinodermata) including Xyloplax, based on comparative transcriptomics.  Molecular Phylogenetics and Evolution. Volume 115, October 2017, Pages 161-170
+	</td>
+	<td>
+	</td>
+</tr>
+ <tr>
+	<td>Clouse, R.M., Branstetter, M.G., Buenavente, P.A.C., Crowley, L.M., Czekanski-Moir, J., General, D.E.M., Giribet, G., Harvey, M.S., Janies, D.A., Mohagan, A.B., Sharma, P.P. & Wheeler, W.C. 2017. First molecular phylogeny of two arachnid orders (Schizomida and Uropygi) supports a tropical Pangean origin and mid-Cretaceous diversification. Journal of Biogeography.
+	</td>
+	<td><a href="http://onlinelibrary.wiley.com/doi/10.1111/jbi.13076/full" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D.,  Ford, C.,  Damodaran, L., Witter. Z.  2016. Spread of Middle East Respiratory Coronavirus: Genetic versus Epidemiological Data.  International Society for Disease Surveillance Conference December 6-9th in Atlanta, GA
+	</td>
+	<td><a href="http://www.syndromic.org/storage/documents/2016_Conference/abstracts/orals/isds16_ora_spread%20of%20middle%20east%20respiratory_janies.pdf" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>de Bernardi Schneider, A., Malone,  R., Guo, J.T., Homan, J., Linchangco, G., Witter, Z., Vinesett, D., Damodaran, L., Janies. D. 2017. Molecular evolution of Zika virus as it crossed the Pacific to the Americas.  Cladistics 33: 1-20.  
+	</td>
+	<td><a href="http://onlinelibrary.wiley.com/doi/10.1111/cla.12178/abstract" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Julien Herrmann, Zachary L. Witter, Nakul Patel, Jonathan Kho,  Daniel A. Janies,  Ümit V. Çatalyürek. 2016. Visual analytics on the spread of pathogens.  BCB'16, October 2-5, 2016, Seattle, WA, USA.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Galac, M., Bosch, I., Janies, D. 2016. Bacterial communities of oceanic sea star (Asteroidea: Echinodermata) larvae.  Marine Biology.  July 2016, 163:162.
+	</td>
+	<td><a href="http://link.springer.com/article/10.1007/s00227-016-2938-3" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Nathalie Oulhen, Andreas Heylan, Tyler Carrier, Vanesa Zazueta, Tara Fresques, Jessica Laird, Thomas Onorato, Daniel Janies, Gary Wessel.  2016.  Regeneration in bipinnaria larvae of the bat star Patiria miniata induces rapid and broad new gene expression. Mechanisms of Development. 142:10-21.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Robert W Malone, Jane Homan, Michael V Callahan, Jill Glasspool-Malone, Lambodhar Damodaran, Adriano De Bernardi Schneider, Rebecca Zimler, James Talton, Ronald R Cobb, Ivan Ruzic, Julie Smith-Gagen, James Wilson, Daniel Janies 2016.  Zika Virus: Medical Countermeasure Development Challenges. PLoS Negl Trop Dis 10(3): e0004530. doi: 10.1371/journal.pntd.0004530
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Daniel A. Janies, Zach Witter, Gregorio V. Linchangco, David W. Foltz, Allison K. Miller, Alexander M. Kerr, Jeremy Jay, Robert W. Reid, and Gregory A. Wray 2016. EchinoDB, an application for comparative transcriptomics of deeply-sampled clades of echinoderms. BMC Bioinformatics.  DOI: 10.1186/s12859-016-0883-2
+	</td>
+	<td><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0883-2" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Clouse RM, Linchangco Jr GV, Kerr AM, Reid RW, Janies DA 2015. Phylotranscriptomic analysis uncovers a wealth of tissue inhibitor of metalloproteinases variants in echinoderms. Royal Society Open Science. 2: 150377.
+	</td>
+	<td><a href="http://rsos.royalsocietypublishing.org/content/2/12/150377" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Daniel Janies, Zachary Witter, Christian Gibson, Thomas Kraft, Izzet F. Senturk, Ümit Çatalyürek. 2015. Syndromic Surveillance of Infectious Diseases meets Molecular Epidemiology in a Workflow and Phylogeographic Application. MEDINFO-2015.
+	</td>
+	<td><a href="http://ebooks.iospress.nl/publication/40313" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Christopher Jones; Meet Zandawala; Dean Semmens; Sarah Anderson; Graeme Hanson; Daniel Janies; Maurice Elphick. 2015. Identification of a neuropeptide precursor protein that gives rise to a "cocktail" of peptides that bind Cu(II) and generate metal-linked dimers. BBA - General Subjects.  In Press.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Ana B Christensen; Joseph L Herman; Maurice R Elphick; Kord M Kober; Daniel Janies; Gregorio Linchangco; Dean C Semmens; Xavier Bailly; Serge N Vinogradov; David Hoogewijs. 2015.  Phylogeny of Echinoderm hemoglobins, PLoS One.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Stephen W. Attwood, Motomu Ibaraki, Yasuhide Saitoh, Naoko Nihei, Daniel A Janies. 2015. Comparative Phylogenetic Studies on Schistosoma japonicum and its Snail Intermediate Host Oncomelania hupensis: Origins, Dispersal and Coevolution. PLOS Neglected Tropical Diseases. DOI:10.1371/journal.pntd.0003935
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Danielle M. Grace-Lema, Solomon Yared, Andrew Quitadamo, Daniel A. Janies, Ward C. Wheeler, Meshesha Balkew, Asrat Hailu, Alon Warburg, Ronald M. Clouse. 2015  A molecular phylogeny of sand flies (Diptera : Psychodidae : Phlebotominae), using recent Ethiopian collections and a broad selection of public sequence data. Systematic Entomology. DOI: 10.1111/syen.12135
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Hoffman M, Luo Y, Monday SR, Ottensen A, Gonza-les-Escalona N, Timme R, Muruvanda R, Wang C, Kastanis G, Keys C, Janies D, Senturk I, Catalyurek UV, Hammack TS, Chu A, Myers R, Haendiges J, Wolfgang WJ, Schoonmaker-Bopp D, Evans P, Meng J, Strain E, Allard MW, Brown EW. 2016. Origins of the Salmonella Bareilly strain causing a Foodborne Outbreak linked to Tuna from an Indian Facility. Journal of Infectious Diseases.  213:502-508
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Daniel A. Janies, Laura W. Pomeroy, Chris Krueger, Yuqi Zhang, Izzet Senturk, Kamer Kaya, Ümit V. Çatalyürek. Phylogenetic visualization of the spread of H7 influenza A viruses. Cladistics. Article first published online: 21 JAN 2015 DOI: 10.1111/cla.12107. 
+	</td>
+	<td><a href="http://onlinelibrary.wiley.com/doi/10.1111/cla.12107/abstract" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Samuel K. Handelman, Jacob M. Aaronson, Michal Sweryn, Igor Voronkin, Jesse J. Kwiek, Wolfgang Sadee, Joseph S. Verducci, and Daniel A. Janies. Cladograms with Path to Event (ClaPTE): A novel algorithm to detect associations between genotypes of phenotypes using phylogenies. Computers in Biology and Medicine. Published Online: December 23, 2014.
+	</td>
+	<td><a href="http://www.computersinbiologyandmedicine.com/article/S0010-4825%2814%2900359-X/abstract" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Kim, S., Miller, A., Brunson, C., Netchy, K., Clouse, R., Janies, D.,Tardy, E., Kerr, A. Shallow-water holothuroids (Echinodermata) of Yap, Federated States of Micronesia. Pacific Science 63(3).
+	</td>
+	<td><a href="http://pacificscience.files.wordpress.com/2014/02/pac-sci-early-view-68-3-8.pdf" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Goldberg, D., Cockburn, M., Hammond, T., Jacquez, G., Janies, D., Knoblock, C., Kuhn, W., Pultar, E., and Raubal, M. 2013. Envisioning a Future for a Spatial-Health CyberGIS Marketplace. HealthGIS 2013.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Zhang, L., Cressie, N., Pomeroy, L., Janies, D. 2013. Multi-species SIR Models from a Dynamical Bayesian Perspective. Theoretical Ecology. 
+	</td>
+	<td><a href="http://link.springer.com/article/10.1007%2Fs12080-013-0180-x" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Mates, J., Kumar, S., Bazan, J., Mefford, M., Voronkin, I., Handelman, S., Mwapasa, V., Ackerman, W., Janies, D., Kwiek, J. 2013. Genotypic and phenotypic heterogeneity in the U3R region of HIV-1 subtype C.  AIDS Research and Human Retroviruses.
+	</td>
+	<td><a href="http://online.liebertpub.com/doi/abs/10.1089/AID.2013.0026?mi=3yvu6q&af=R&searchText=breastfeeding&target=default&" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Mounce, R. and Janies, D.  2013. Synergistic sharing of data and tools to enable team science.  In press in Computation for Humanity - Information Technology to Advance Society.  Justyna Zander and Pieter J. Mosterman eds. CRC press.
+	</td>
+	<td><a href="http://www.crcpress.com/product/isbn/9781439883273" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. 2013. Xyloplax. McGraw-Hill 2013 Yearbook of Science & Technology.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Cai, Z., Eulenstein, O., Janies, D., Schwartz, D.  2013. Bioinformatics Research and Applications: 9th International Symposium, ISBRA 2013, Charlotte, NC, USA, May 20-22, 2013, Proceedings (Lecture Notes in Bioinformatics 7875; Springer)
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Daniel A. Janies, Jonathon Studer, Samuel K. Handelman, Gregorio Linchangco. A comparison of supermatrix and supertree methods for multilocus phylogenetics using organismal datasets. Cladistics. DOI: 10.1111/cla.12014. February 18, 2013.
+	</td>
+	<td><a href="http://onlinelibrary.wiley.com/doi/10.1111/cla.12014/full" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., Pomeroy, L., Aaronson, J., Handelman, S., Hardman, J., Kawalec, K., Bitterman, T., Wheeler, W.C. (2012) Analysis and visualization of H7 influenza using genomic, evolutionary and geographic information in a modular web service.Cladistics. DOI: 10.1111/j.1096-0031.2012.00401.x
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Newman S., Hill, N., Spragens, K., Janies, D., Voronkin, I., Prosser, D., Baoping, Y., Lei, F., Batbayar, N., Tseveenmyadag, N., Bishop, C., Butler, P., Wikelski, M., Sivananinthaperumal, B., Mundkur, T., Douglas, D., and Takekawa, J. (2012) An Eco-Virological Approach for Assessing the Role of Wild Birds in the Spread of Avian Influenza H5N1 Along the Central Asian Flyway. PloS ONE. 7(2): e30636. doi:10.1371/journal.pone.0030636
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Bokhari, S., Pomeroy, L., Janies, D. (2012) Reassortment Networks and the Evolution of Pandemic H1N1 Swine-origin Influenza. IEEE Transactions on Computational Biology and Bioinformatics. 
+	</td>
+	<td><a href="http://www.computer.org/portal/web/csdl/doi/10.1109/TCBB.2011.95" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies D., Embi P.J., Payne P.R. Health-care hit or miss?: Collect genetic data on pathogens. Nature. Vol. 470, no. 7334. (February 17, 2011):329. 
+	</td>
+	<td><a href="http://www.nature.com/nature/journal/v470/n7334/full/470327a.html" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., Voight, J., Daly, M., (2011) Echinoderm Phylogeny including Xyloplax, a Progenetic Asteroid. Systematic Biology. 604:420-438 doi: 10.1093/sysbio/syr044
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Studer, J. and Janies. D. (2011) Global spread and evolution of viral hemorrhagic septicemia virus. Journal of Fish Diseases. 34: 741-747. doi: 10.1111/j.1365-2761.2011.01290.x
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Chakrabarty, P., Lam, C., Hardman, J., Aaronson, J., House, P., Janies, D. (2012) Speciesmap: A Web-Based Application for Determining the Effects of the 2010 Gulf Of Mexico Oil Spill on Wildlife, with a Preliminary List of Fishes Put at Risk. Biodiversity and Conservation.
+	</td>
+	<td><a href="http://www.springerlink.com/openurl.asp?genre=article&id=doi:10.1007/s10531-012-0284-4" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Griffen, A., Beall C., Firestone, N., Gross, E., DiFranco J., Hardman, H., Vriesendorp, B., Faust, R., Janies, D., Leys, E., CORE: A Phylogenetically-Curated 16S rDNA Database of the Core Oral Microbiome. PLoS ONE6(4):e19051. doi:10.1371/journal.pone.0019051
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Kumar, S., Handelman, S., Voronkin I., Mwapasa V., Janies D., Rogerson S., Meshnick S., Kwiek J. (2011) Different Regions of HIV-1 Subtype C Env are Associated  with Placental Localization and in Utero Mother-to-Child Transmission. Journal of Virology.
+	</td>
+	<td><a href="http://jvi.asm.org/cgi/reprint/JVI.01955-10v1?view=long&pmid=21543508" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Gross, E., E. Leys, S. Gasparovich, N. Firestone, J. Schwartzbaum, D. Janies, K. Asnani, A. Griffen, (2010) Bacterial 16S Sequence Analysis of Severe Caries in Young Permanent Teeth. Journal of Clinical Microbiology. 48:4121-8
+	</td>
+	<td><a href="http://jcm.asm.org/cgi/content/abstract/JCM.01232-10v1" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Bulach, D., R. Halpin, D. Spiro, L. Pomeroy, D. Janies, D. Boyle (2010) Molecular analysis of H7 avian influenza viruses from Australia and New Zealand: Genetic diversity and relationships - 1976 to 2007. Journal of Virology.
+	</td>
+	<td><a href="http://jvi.asm.org/cgi/content/abstract/JVI.00930-10v1" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., I. Voronkin, M. Das, J. Hardman, T. Treseder, J. Studer. (2010) Genome Informatics of Influenza A. From data sharing to shared analytical capabilities.Animal Health Research Reviews. 11: 73-79
+	</td>
+	<td><a href="http://journals.cambridge.org/repo_A78auyCI" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., T. Treseder, B. Alexandrov, F. Habib, J. Chen, R. Ferreira, Ü. Çatalyürek, A. Varón, W.C. Wheeler. (2010) The Supramap project: Linking pathogen genomes with geography to fight emergent infectious diseases. Cladistics. 27: 61-66
+	</td>
+	<td><a href="http://dx.doi.org/10.1111/j.1096-0031.2010.00314.x" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., I. Voronkin, J. Studer, J. Hardman, B. Alexandrov, T. Treseder, C. Valson. (2010) Selection for resistance to oseltamivir in seasonal and pandemic H1N1 influenza and widespread co-circulation of the lineages. International Journal of Health Geographics. 9:13
+	</td>
+	<td><a href="http://dx.doi.org/10.1186/1476-072X-9-13" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Hovmöller, R., B. Alexandrov, J. Hardman, D. Janies. (2010) Tracking the Geographic Spread of Avian Influenza (H5N1) with Multiple Phylogenetic Trees. Cladistics. 26:1-13.
+	</td>
+	<td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1096-0031.2009.00297.x/full" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Bokhari, S. and D. Janies. (2010) Reassortment Networks for Investigating the Evolution of Segmented Viruses. IEEE Transactions on Computational Biology and Bioinformatics 7:288-298.
+	</td>
+	<td><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=04585355" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Hill, A.W., R. Guralnick, M. Wilson, F. Habib, D. Janies. (2009) Evolution of drug resistance in multiple distinct lineages of H5N1 avian influenza. Infection, Genetics, and Evolution. 9: 169-178. Top 10 most downloaded for the journal for 2009.
+	</td>
+	<td><a href="http://linkinghub.elsevier.com/retrieve/pii/S1567134808001913" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Yilmaz, A., M. Nishiyama, B. Garcia-Fuentes, G. Souza, D. Janies, J. Gray, E. Grotewold. (2009) GRASSIUS: A Platform for Comparative Regulatory Genomics Across the Grasses. Plant Physiol.doi:10.1104/pp.108.128579
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., F. Habib, B. Alexandrov, A. Hill, D. (2008) Pol. Evolution of genomes, host shifts, and geographic spread of SARS-CoV and related coronaviruses. Cladistics. 24: 111-130.
+	</td>
+	<td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1096-0031.2008.00199.x/full" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Ott, M., J. Zola, S. Aluru, A. Johnson, D. Janies, A. Stamatakis. (2008) Large-scale Phylogenetic Analysis on Current HPC Architectures. Scientific Programming. 4:25 PM5-270.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. and D. Pol. (2008) Phylogenetic analysis of emerging infectious diseases. In Tutorials in Mathematical Biosciences IV: Evolution and Ecology (Lecture Notes in Mathematics / Mathematical Biosciences Sub series) A. Friedman ed.
+	</td>
+	<td><a href="http://www.springerlink.com/content/978-3-540-74328-6#section=246925&page=1" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., A. Hill, R. Guralnick, F. Habib, E. Waltari, W. Wheeler. (2007) Genomic Analysis and Geographic Visualization of the Spread of Avian Influenza (H5N1). Systematic Biology. 56:321-9.
+	</td>
+	<td><a href="http://sysbio.oxfordjournals.org/content/56/2/321.full" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Habib, F., A. Johnson, R. Bundschuh, D. Janies. (2007) Large scale genotype-phenotype correlation analysis based on phylogenetic trees. Bioinformatics. 23:785-788 
+	</td>
+	<td><a href="http://bioinformatics.oxfordjournals.org/content/23/7/785.abstract" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D., P. Goloboff, D. Pol, Large-scale phylogenetic analysis for the study of zoonosis and assessment of influenza surveillance. Scalable Computing: Practice and Experience. Volume 8, Number 2, pp. 143-146. 2007
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Salzberg, S., C. Kingsford, G. Cattoli, D. Spiro, D. Janies, et al., (2007) Genome analysis links recent European and African H5N1 influenza viruses and shows them to be distinct from earlier outbreak strains. Emerging Infectious Diseases. 13:5
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Zhang, X., M. Hasoksuz, D. Spiro, R. Halpin, S. Wang, A. Vlasova, D. Janies, L. Jones, E. Ghedin, L. Saif. (2007) Quasispecies of bovine enteric and respiratory coronaviruses based on complete genome sequences and genetic changes after tissue culture adaptation. Virology. 363:1-10
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Vinh, L., A. Varon, D. Janies, W. Wheeler. (2007) Towards Phylogenomic Reconstruction. International Conference on Bioinformatics and Computational Biology. BIOCOMP'07. CSREA Press Vol. 1, page: 98-104.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Zhang X., M. Hasoksuz, D. Spiro, R. Halpin, S. Wang, S. Stollar, D. Janies, N. Hadya, Y. Tang, E. Ghedin, L. Saif. (2007) Complete genomic sequences, a key residue in the spike protein and deletions in non-structural protein 3b of US strains of the virulent and attenuated coronaviruses, transmissible gastroenteritis virus and porcine respiratory coronavirus. Virology. 358:424-35.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Kurc, T., D. Janies, A. Johnson, S. Langella, S. Oster, S. Hastings, F. Habib, T. Camerlengo, D. Ervin, U. Catalyurek, J. Saltz. (2006) An XML-based System for Synthesis of Data from Disparate Databases.  Journal of the American Medical Informatics Association. 13:289-301.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Wheeler, W.C., L. Aagesen, C.P. Arango,  J. Faivovich, T. Grant, C. D'Haese,  D. Janies, W.L. Smith,  A. Varón,  G. Giribet. (2006) Dynamic homology and phylogenetic systematics: a unified approach using POY. American Museum of Natural History, New York.  365 pp. ISBN 0-913424-58-7.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Wang, Q., M. Han, J. Funk, G. Bowman, D. Janies, L.J. Saif. (2005) Genetic diversity and recombination of porcine sapoviruses. Journal of Clinical Microbiology. 43: 5963-72.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Hastings, S., S. Langella, S. Oster, T. Kurc, T. Pan, U. Catalyurek, D. Janies, Saltz, J. (2005) Grid-based Management of Biomedical Data using an XML-based Distributed Data Management System. Symposium on Applied Computing. Santa Fe. March 13-17, 2005. 
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Clouse, R., D. Janies, A. Kerr. (2005) Resurrection of Bohadschia bivittata from B. marmorata (Holothuroidea: Holothuriidae) based on behavioral, morphological, and mitochondrial DNA evidence. Zoology. 108:27-39.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Kerr, A., D. Janies, R. Clouse, J. Kuszak, J. Kim. (2005) Molecular phylogeny of coral-reef sea cucumbers (Holothuroidea: Aspidochirotida) based on 16S mtrDNA sequence. Marine Biotechnology. 7:53-60.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, DA. (2004)  "Evolution of asterozoan echinoderms and their development." Echinoderms: München: 586-587. Balkema International Publishers, T. Heinzeller and J.H. Nebelsick (eds): Leiden, Netherlands. 
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Wheeler, W., Janies, D., DeLaet, J., (2004) Parallel computing and sequence alignment. McGraw-Hill 2004 Yearbook of Science & Technology.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. (2003) Reversibility in life cycle and larval evolution among echinoderms.  Cladistics 19:154.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. (2003) Bioinformatics. Access science @ McGraw Hill.
+	</td>
+	<td><a href="http://accessscience.com/qanda.aspx?id=4938&term=Human+genome" target="_blank" class="btn btn-primary">Link</a>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. and W. Wheeler. (2002) Theory and practice of parallel direct optimization, in Techniques in Molecular Systematics and Evolution.  R. Desalle, G. Giribet, and W. Wheeler (eds). Birkhauser Verlag, Basel. pp. 115-23.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D and W. Wheeler. (2001)  Efficiency of parallel direct optimization. Cladistics. 17: S71-S82. 
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. (2001) Phylogenetic relationships of extant echinoderm classes. Canadian Journal of Zoology. 79:1232-1250.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Frost, D., R. Etheridge, D. Janies, and T. Titus. (2001) Total evidence, sequence alignment, evolution of polychrotid lizards, and a reclassification of the Iguania (Squamata: Iguanania). American Museum of Natural History, Novitates. 3343. 38 pp.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Frost, D., D. Janies, P. le Fras Mouton, T. Titus. (2001) A molecular perspective on the phylogeny of the girdled lizards (Cordylidae, Squamata). American Museum of Natural History, Novitates. 3310. 
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Giribet, G., D. Janies, and W. Wheeler. (2001) Introduction. Cladistics. 17: S1-S2.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Phillips, A. D. Janies, and W. Wheeler. (2000)  Multiple sequence alignment in phylogenetic analysis. Molecular Phylogenetics and Evolution. 16:317-30.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Blake, D., D. Janies, and R. Mooi. (2000) Evolution of Starfishes: Morphology, Molecules, Development, and Paleobiology. American Zoologist. 40: 311-315.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. and R. Desalle. (1999) Development, Evolution, and Corroboration.  Anatomical Record (The New Anatomist). 257: 6-14. 
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies D. and R.  Mooi. (1999) Xyloplax is an asteroid. in Echinoderm Research 1998, M. Candia Carnevali and F. Bonasoro (eds).  Balkema, Rotterdam. pp. 311-316.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>McEdward, L. and D. Janies. (1997) Relationships among development, ecology, and morphology in the evolution of echinoderm larvae and life cycles.  Biological Journal of the Linnean Society. 60: 381-400.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. A. and L. R. McEdward. (1994) Heterotopy, pelagic direct development, and new body plans in velatid asteroids, in: Echinoderms Through Time, B. David , A. Guille , J.P. Féral, and M. Roux (eds). Balkema, Rotterdam, Netherlands.  319-324.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. A. and L. R. McEdward. (1994) A hypothesis for the evolution of the concentricycloid water-vascular system, in: Reproduction and Development of Marine Invertebrates, W.H. Wilson Jr., S.A. Stricker, and G.L. Shinn (eds) Johns Hopkins Press, Baltimore.  246-257.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>Janies, D. A. and L. R. McEdward. (1993) Highly derived coelomic and water-vascular morphogenesis in a starfish with pelagic direct development.  Biological Bulletin.  185: 56-76.
+	</td>
+	<td>
+	</td>
+ </tr>
+ <tr>
+	<td>McEdward, L. R. and D. A. Janies. (1993) What is a larva?  Life cycle evolution in asteroids.  Biological Bulletin.  184: 255-268.
+	</td>
+	<td>
+	</td>
+ </tr>
+	 </table>
+
+      <!--<div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+
+            <div class="icon">
+              <i class="icon-laptop3"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Business Strategy</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p><a href="single-page.html">Learn more</a></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-presentation"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Business Marketing</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p><a href="single-page.html">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-wallet2"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Business Profit</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p><a href="single-page.html">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+
+            <div class="icon">
+              <i class="icon-hourglass"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Fast &amp; Reliable</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p><a href="single-page.html">Learn more</a></p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-shield3"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Business Security</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p><a href="single-page.html">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-adjustments"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Full Customization</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              <p><a href="single-page.html">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>-->
+  </section>
+  <!-- END section -->
+  
+  <!--<div class="container">
+    <div class="probootstrap-cta probootstrap-animate border-bototm-none">
+      <h2 class="mb20">Do you have amazing project in mind? Let's get started.</h2>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      <p><a href="#" role="button" class="btn btn-primary">Get In Touch</a></p>
+    </div>
+  </div>-->
+
+  <!-- END section cta -->
+
+  <footer class="probootstrap-footer probootstrap-bg">
+    <div class="container">
+      <div class="row mb60">
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget">
+            <h4 class="heading">About the Janies Lab.</h4>
+            <p>The work of the Janies lab involves empirical studies of organismal diversity. Funded by various government organizations such as <a href="https://www.darpa.mil/" target="_blank">DARPA</a>, <a href="http://www.dtra.mil/" target="_blank">DTRA</a>, and <a href="https://www.defense.gov/" target="_blank">DOD</a>, the lab develops and manages software to track pathogens and visualize diverse genomic data efficiently. </p>
+            <!--<p><a href="#">Read more...</a></p>-->
+          </div> 
+        </div>
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget probootstrap-link-wrap">
+            <h4 class="heading">Quick Links</h4>
+            <ul class="stack-link">
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="research.html" target="_blank">Research</a></li>
+              <li><a href="people.html" target="_blank">People</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget">
+            <h4 class="heading">UNCC Links</h4>
+            <ul class="stack-link">
+              <li><a href="https://cci.uncc.edu/" target="_blank">College of Computing and Informatics</a></li>
+			  <li><a href="https://cci.uncc.edu/bioinformatics/47/3" target="_blank">Bioinformatics Department</a></li>
+              <li><a href="https://cci.uncc.edu/academics/bioinformatics" target="_blank">Bioinformatics Academic Programs</a></li>
+			  <li><a href="https://viscenter.uncc.edu/" target="_blank">Charlotte Visualization Center</a></li>
+              <li><a href="https://jobs.uncc.edu/postings/search?utf8=%E2%9C%93&query=bioinformatics&query_v0_posted_at_date=&query_organizational_tier_2_id%5B%5D=32&2074=&commit=Search" target="_blank">Bioinformatics Jobs at UNCC</a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget probootstrap-link-wrap">
+            <h4 class="heading">Contact</h4>
+			<p><a href="mailto:djanies@uncc.edu" target="_blank" class="btn btn-primary">Email</a> <a href="tel:1-704-687-1742" target="_blank" class="btn btn-primary">Phone</a></p>
+            <p><a href="https://goo.gl/maps/TqhxBTHTaZL2" target="_blank">Bioinformatics 315 <br> 9331 Robert D. Snyder Rd <br> Charlotte, NC 28223</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.7267073928706!2d-80.74415738426713!3d35.312771580281826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c1646674eaf%3A0xf6b3e2e60b601e07!2sBioinformatics%2C+9331+Robert+D.+Snyder+Rd%2C+Charlotte%2C+NC+28223!5e0!3m2!1sen!2sus!4v1530200865839" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<!--<form action="#">
+              <div class="form-field">
+                <input type="text" class="form-control" placeholder="Enter your email">
+                <button class="btn btn-subscribe">Send</button>
+              </div>
+            </form>-->
+          </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-md-6">
+          <div class="probootstrap-footer-widget">
+			<p>&copy; 2018 UNC Charlotte - Janies Lab | All Rights Reserved <br> <a href="https://legal.uncc.edu/termsofuse" target="_blank">Terms of Use</a> | <a href="https://legal.uncc.edu/policies" target="_blank">University Policies</a></p>
+			<p><small>Design by <a href="https://uicookies.com/">uicookies.com</a></small></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="probootstrap-footer-widget right">
+            <ul class="probootstrap-social">
+             <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+             <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
+             <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+  </div>
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+  
+  </body>
+</html>

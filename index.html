@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Janies Lab</title>
+    <meta name="description" content="Webpage for the lab of Dr. Daniel Janies">
+    <meta name="keywords" content="bioiformatics, genomics, computational biology, visualization, machine learning, echinoderms, infectious disease">
+    <link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed-114x114.png" sizes="114x114" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed-144x144.png" sizes="144x144" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="https://www.uncc.edu/sites/all/themes/omega/omega/apple-touch-icon-precomposed-72x72.png" sizes="72x72" />
+	<link rel="shortcut icon" href="https://www.uncc.edu/sites/www.uncc.edu/files/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- START: header -->
+  
+  <div class="probootstrap-loader"></div>
+
+  <header role="banner" class="probootstrap-header" style="background-color:rgba(0,69,37,0.5);">
+    <div class="container">
+        <a href="index.html" class="probootstrap-logo">Janies Lab<span>.</span></a>
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <!--<li><a href="projects.html">Projects</a></li>-->
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="https://cci.uncc.edu/bioinformatics/47/3" target="_blank">UNCC Bioinformatics</a></li>
+          </ul>
+          <ul class="probootstrap-right-nav hidden-xs">
+            <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
+            <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
+          </ul>
+          <div class="extra-text visible-xs"> 
+            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <h5>Address</h5>
+            <p>9331 Robert D. Snyder Rd <br> Charlotte, NC 28223</p>
+            <h5>Connect</h5>
+            <ul class="social-buttons">
+             <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+             <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
+             <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+  </header>
+  <!-- END: header -->
+  <section class="probootstrap-slider flexslider">
+    <ul class="slides">
+      <li style="background-image: url(img/supramapheader.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="slides-text probootstrap-animate">
+                <h2 style="background-color:#004525;">Welcome to our lab.</h2>
+                <!--<p><a href="https://uicookies.com/" target="_blank" class="btn btn-primary">Read More...</a></p>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--<li style="background-image: url(img/slider_2.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="slides-text probootstrap-animate">
+                <h2>Black is elegant.</h2>
+                <p><a href="https://uicookies.com/" target="_blank" class="btn btn-primary">Get Started</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li style="background-image: url(img/slider_3.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="slides-text probootstrap-animate">
+                <h2>Whitespace is clever.</h2>
+                <p><a href="https://uicookies.com/" target="_blank" class="btn btn-primary">Get Started</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>-->
+    </ul>
+  </section>
+  <!-- END: slider  -->
+
+  <!-- END section -->
+<!--
+  <div class="probootstrap-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInLeft">
+
+          <div class="panel-group probootstrap-panel" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h3 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                    Business Strategy
+                  </a>
+                </h3>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+                  
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Business Marketing
+                  </a>
+                </h3>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Business Profit
+                  </a>
+                </h3>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END panel-group -->
+<!--
+        </div>
+        <div class="col-md-6 probootstrap-animate" data-animate-effect="fadeInRight">
+
+          <figure>
+            <div class="probootstrap-video">
+              <a href="https://vimeo.com/45830194" class="popup-vimeo probootstrap-video-play"><i class="icon-play3"></i></a>
+              <img src="img/slider_2.jpg" alt="Free HTML5 Bootstrap Template by uicookies.com" class="img-responsive img-border">
+            </div>
+            <figcaption>This is a caption. Far far away, behind the word mountains.</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END section -->
+ 
+<!--  
+  <div class="container">
+    <div class="probootstrap-cta probootstrap-animate">
+      <h2 class="mb20">Create a beautiful templates to benefits many.</h2>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      <p><a href="#" role="button" class="btn btn-primary">Get started</a></p>
+    </div>
+  </div>
+
+  <!-- END section cta -->
+
+  <section class="probootstrap-section">
+    <div class="container">
+     <!--<div class="row">
+        <div class="col-md-12 section-heading probootstrap-animate">
+          <h2>Our Specialties</h2>
+        </div>
+      </div>-->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+
+            <div class="icon">
+              <i class="icon-code"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Software Development</h3>
+              <p>We develop bioinformatics tools to help process genetic data. From software packages to databases, our tools help researchers gain insight from their data.</p>
+              <!--<p><a href="single-page.html">Learn more</a></p>-->
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-presentation"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Visualization</h3>
+              <p>Whether it's plotting large amounts of genetic information or overlaying geospatial data on a map, we create intuitive visualizations to help in the understanding of complex data.</p>
+              <!--<p><a href="single-page.html">Learn more</a></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <i class="icon-tree"></i>
+            </div>
+            <div class="text">
+              <h3 class="heading">Phylogenetics</h3>
+              <p>Analyzing the evolutionary relationships of organisms allows us to understand its lineage. We study pathogens, echinoderms, and even the migration of humans.</p>
+              <!--<p><a href="single-page.html">Learn more</a></p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading probootstrap-animate">
+          <h2>Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-card">
+            <div class="probootstrap-card-media">
+              <a href="#"><img src="img/supramapheader.jpg" class="img-responsive img-border" alt="Supramap"></a>
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Phylogenetic Visualization </h2>
+              <p class="category">Geospatial Phylogenetic Software</p>
+              <!--<p>Supramap is a tool to generate and share knowledge about evolution and biogeography. A supramap gives users a quick and easy way to integrate genotypic and phenotypic data in a geospatial context. When viewed in a virtual globe (e.g. Google Earth or NASA WorldWind), the user has an interactive map of the spread of various lineages of organisms (e.g. strains of pathogens) over the earth.</p>-->
+			  <p>We have created tools to generate and share knowledge about evolution and biogeography. We often use these tools to understand the spread of infectious diseases over time, space, and various hosts.  However other groups have used the tools to study the movement of many organisms.</p>
+              <!--<p><a href="https://supramap.herokuapp.com/" target="_blank">Project Site</a></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-card">
+            <div class="probootstrap-card-media">
+              <a href="#"><img src="img/CodeBanner.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Infectious Disease Surveillance</h2>
+              <p class="category">Public Health Pathogen Tracking</p>
+              <!--<p>From MERS to Zika and Malaria to Influenza, our lab worked on tracking of the spread of many infectious diseases. Combining expertise in bioinformatics and genomics with software engineering and machine learning, we have innovatively created ways to understand and track the spread of pathogens across the planet.</p>-->
+			  <p>From Avian Influenza to Zika, our lab has worked on understanding the spread of many infectious diseases. Our current efforts are in service of the Biosurveillance Ecosystem for DTRA.</p>
+              <!--<p><a href="single-page.html"></a></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-card">
+            <div class="probootstrap-card-media">
+              <a href="#"><img src="img/Crinoidea_wSeal.png" class="img-responsive img-border" alt="EchinoDB"></a>
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">EchinoDB</h2>
+              <p class="category">Echinoderm Genomics</p>
+              <!--<p>EchinoDB is a database consisting of amino acid sequence othoclusters from echinoderm transcriptomes. Taxa are sampled to span the deepest divergences within each of the five extant echinoderm classes. Data can be searched by BLASTX or BLASTP or annotation and database identifiers from the Strongylocentrotus purpuratus reference protein set at NCBI.</p>-->
+			  <p>We are working on whole genomes for Holthuroids and Ophiuoids as part of an NIH-funded effort in regeneration biology. A product of our NSF work is EchinoDB.  EchinoDB is a database consisting of amino acid sequence othoclusters from over 40 echinoderm transcriptomes. Taxa are sampled to span the deepest divergences within each of the five extant echinoderm classes. Data can be searched by BLASTX or BLASTP or annotation database identifiers from the Strongylocentrotus purpuratus reference protein set at NCBI.</p>
+              <p><a href="http://echinodb.uncc.edu/" target="_blank">Project Site</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+  
+
+  <footer class="probootstrap-footer probootstrap-bg">
+    <div class="container">
+      <div class="row mb60">
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget">
+            <h4 class="heading">About the Janies Lab.</h4>
+            <p>The work of the Janies lab involves empirical studies of organismal diversity. Funded by various government organizations such as <a href="https://www.darpa.mil/" target="_blank">DARPA</a>, <a href="http://www.dtra.mil/" target="_blank">DTRA</a>, and <a href="https://www.defense.gov/" target="_blank">DOD</a>, the lab develops and manages software to track pathogens and visualize diverse genomic data efficiently. </p>
+            <!--<p><a href="#">Read more...</a></p>-->
+          </div> 
+        </div>
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget probootstrap-link-wrap">
+            <h4 class="heading">Quick Links</h4>
+            <ul class="stack-link">
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="research.html" target="_blank">Research</a></li>
+              <li><a href="people.html" target="_blank">People</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget">
+            <h4 class="heading">UNCC Links</h4>
+            <ul class="stack-link">
+              <li><a href="https://cci.uncc.edu/" target="_blank">College of Computing and Informatics</a></li>
+			  <li><a href="https://cci.uncc.edu/bioinformatics/47/3" target="_blank">Bioinformatics Department</a></li>
+              <li><a href="https://cci.uncc.edu/academics/bioinformatics" target="_blank">Bioinformatics Academic Programs</a></li>
+			  <li><a href="https://viscenter.uncc.edu/" target="_blank">Charlotte Visualization Center</a></li>
+              <li><a href="https://jobs.uncc.edu/postings/search?utf8=%E2%9C%93&query=bioinformatics&query_v0_posted_at_date=&query_organizational_tier_2_id%5B%5D=32&2074=&commit=Search" target="_blank">Bioinformatics Jobs at UNCC</a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="col-md-3">
+          <div class="probootstrap-footer-widget probootstrap-link-wrap">
+            <h4 class="heading">Contact</h4>
+			<p><a href="mailto:djanies@uncc.edu" target="_blank" class="btn btn-primary">Email</a> <a href="tel:1-704-687-1742" target="_blank" class="btn btn-primary">Phone</a></p>
+            <p><a href="https://goo.gl/maps/TqhxBTHTaZL2" target="_blank">Bioinformatics 315 <br> 9331 Robert D. Snyder Rd <br> Charlotte, NC 28223</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.7267073928706!2d-80.74415738426713!3d35.312771580281826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c1646674eaf%3A0xf6b3e2e60b601e07!2sBioinformatics%2C+9331+Robert+D.+Snyder+Rd%2C+Charlotte%2C+NC+28223!5e0!3m2!1sen!2sus!4v1530200865839" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<!--<form action="#">
+              <div class="form-field">
+                <input type="text" class="form-control" placeholder="Enter your email">
+                <button class="btn btn-subscribe">Send</button>
+              </div>
+            </form>-->
+          </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-md-6">
+          <div class="probootstrap-footer-widget">
+			<p>&copy; 2018 UNC Charlotte - Janies Lab | All Rights Reserved <br> <a href="https://legal.uncc.edu/termsofuse" target="_blank">Terms of Use</a> | <a href="https://legal.uncc.edu/policies" target="_blank">University Policies</a></p>
+			<p><small>Design by <a href="https://uicookies.com/">uicookies.com</a></small></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="probootstrap-footer-widget right">
+            <ul class="probootstrap-social">
+             <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+             <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
+             <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+  </div>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+  
+  </body>
+</html>
