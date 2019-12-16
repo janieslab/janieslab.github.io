@@ -10,7 +10,7 @@
 /* COLORS:
 *Print Standard Yellow: #f0cb00
 *Web Yellow: #A69667
-*Print Standard Green: #00703c 
+*Print Standard Green: #00703c
 *Web Green: #004525
 */
 
@@ -1050,7 +1050,7 @@ figure:hover figcaption, figure:focus figcaption {
 .slides-text {
   z-index: 99;
   position: relative;
-  padding-top: 350px;
+  padding-top: 150px;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -1966,7 +1966,7 @@ figure:hover figcaption, figure:focus figcaption {
 
 /* Flexslider override style */
 .slider-height, .flexslider, .flexslider2, .flexslider .slides > li, .flexslider2 .slides > li {
-  height: 800px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -2719,7 +2719,7 @@ figure:hover figcaption, figure:focus figcaption {
 
 #SearchTable tr {
     /* Add a bottom border to all table rows */
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
 }
 
 #SearchTable tr.header, #myTable tr:hover {
