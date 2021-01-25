@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
@@ -28,7 +29,7 @@
 
   <div class="probootstrap-loader"></div>
 
-  <header role="banner" class="probootstrap-header" style="background-color:#004525;">
+  <header role="banner" class="probootstrap-header" style="background-color:rgba(0,69,37,0.85);">
     <div class="container">
         <a href="index.html" class="probootstrap-logo">Janies Lab<span>.</span></a>
 
@@ -42,14 +43,15 @@
             <li><a href="research.html">Research</a></li>
             <li><a href="people.html">People</a></li>
             <li><a href="jobs.html">Job Opportunities</a></li>
-            <li class="active"><a href="data.html">Data</a></li>
+            <li><a href="data.html">Data</a></li>
+			<li class="active"><a href="sars-cov-2.html">SARS-CoV-2</a></li>
 			<li>|</li>
             <li><a href="https://cci.uncc.edu/bioinformatics/47/3" title="Dept. of Bioinformatics and Genomics" target="_blank">BiG</a></li>
 			<li><a href="https://brc.uncc.edu/" title="Bioinformatics Research Center"  target="_blank">BRC</a></li>
 			<li><a href="https://cci.uncc.edu/" title="College of Computing and Informatics" target="_blank">CCI</a></li>
           </ul>
           <ul class="probootstrap-right-nav hidden-xs">
-            <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+            <li><a href="https://github.com/janieslab" target="_blank"><i class="icon-github"></i></a></li>
             <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
             <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
           </ul>
@@ -59,7 +61,7 @@
             <p>9331 Robert D. Snyder Rd <br> Charlotte, NC 28223</p>
             <h5>Connect</h5>
             <ul class="social-buttons">
-             <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+             <li><a href="https://github.com/janieslab" target="_blank"><i class="icon-github"></i></a></li>
              <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
              <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
             </ul>
@@ -68,107 +70,52 @@
     </div>
   </header>
   <!-- END: header -->
-  <section class="probootstrap-slider flexslider">
-    <ul class="slides">
-      <li style="background-image: url(img/DataHeader.jpg);">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <div class="slides-text probootstrap-animate">
-                <h2 style="background-color:#004525;">Data</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
+  <!-- <section class="probootstrap-slider flexslider"> -->
+    <!-- <ul class="slides"> -->
+      <!-- <li style="background-image: url(img/UNCC_map.png);"> -->
+        <!-- <div class="container"> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col-md-12 text-center"> -->
+              <!-- <div class="slides-text probootstrap-animate"> -->
+                <!-- <h2>SARS-CoV-2</h2> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </li> -->
+    <!-- </ul> -->
+  <!-- </section> -->
   <!-- END: slider  -->
 
+
   <section class="probootstrap-section">
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row" >
+	  <br>
         <div class="col-md-12 section-heading probootstrap-animate">
-          <h2>Datasets, Tools, and Dashboards</h2>
-		  <!--<h3>Coming Soon...</h3>-->
-        </div>
-      </div>
-      <div class="row">
-
-		<div class="col-md-4 col-sm-6 probootstrap-animate">
-          <div class="probootstrap-card">
-            <div class="probootstrap-card-media">
-              <img src="data/img/Crinoidea_wSeal.png" class="img-responsive img-border">
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">EchinoDB</h2>
-              <p class="category">Echinoderm Genomics</p>
-              <p>EchinoDB is a database consisting of amino acid sequence othoclusters from echinoderm transcriptomes. Taxa are sampled to span the deepest divergences within each of the five extant echinoderm classes. Data can be searched by BLASTX or BLASTP or annotation and database identifiers from the <i>Strongylocentrotus purpuratus</i> reference protein set at NCBI.</p>
-              <p><a href="http://echinodb.uncc.edu/" target="_blank" class="btn btn-primary">Database</a></p>
-            </div>
-          </div>
-        </div>
-
-		<div class="col-md-4 col-sm-6 probootstrap-animate">
-          <div class="probootstrap-card">
-            <div class="probootstrap-card-media">
-              <img src="data/img/bantu.png" class="img-responsive img-border">
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Bantu Migration</h2>
-              <p class="category">Describing the Bantu Migration using Phylogeographic Analysis</p>
-              <p>The Bantu migration is a heavily-debated topic that varies depending on the input data used to reconstruct their lineage. This dashboard highlights various migratory paths as well as our combined, less ambiguous migratory model.</p>
-			  <p><a href="https://public.tableau.com/profile/cford38#!/vizhome/BantuMigration/AnIntegratedPhylogeographicAnalysisoftheBantuMigration" target="_blank" class="btn btn-primary">Dashboard</a> <a href="https://github.com/colbyford/BantuMigration" target="_blank" class="btn btn-primary">GitHub</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!--<div class="col-md-4 col-sm-6 probootstrap-animate">
-          <div class="probootstrap-card">
-            <div class="probootstrap-card-media">
-              <img src="data/cloning_oreaster_larvae/headerimg.jpg" class="img-responsive img-border">
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Cloning, Oreaster (Asteroidea: Echinodermata) larvae and the discovery of the adult in the life cycle.</h2>
-              <p class="category">Echinoderm Genomics</p>
-              <p>This archive includes 6 folders.<br>4 folders, (16S, COI, 12S-trnas, and trnas) include the four loci level datasets used in the phylogenetic analyses.<br>2 folders (trnas-frag, COI-frag) includ four sublocus level dataseets used in distance and SNP analyses....</p>
-              <p><a href="data/cloning_oreaster_larvae/sup-data-janies-et-al.zip">Download</a></p>
-            </div>
-          </div>
-        </div>-->
-
-        <!--<div class="col-md-4 col-sm-6 probootstrap-animate">
-          <div class="probootstrap-card">
-            <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="img/slider_3.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Dataset 3</h2>
-              <p class="category">Category</p>
-              <p>Description...</p>
-              <p><a href="single-page.html">View details</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 probootstrap-animate">
-          <div class="probootstrap-card">
-            <div class="probootstrap-card-media">
-              <a href="single-page.html"><img src="img/slider_3.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com"></a>
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading mb0">Dataset 3</h2>
-              <p class="category">Category</p>
-              <p>Description...</p>
-              <p><a href="single-page.html">View details</a></p>
-            </div>
-          </div>
-        </div>-->
-
+          <div class='tableauPlaceholder' id='viz1611608557047' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SA&#47;SARS-CoV-2VariantDashboard&#47;SARS-CoV-2VariantDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SARS-CoV-2VariantDashboard&#47;SARS-CoV-2VariantDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SA&#47;SARS-CoV-2VariantDashboard&#47;SARS-CoV-2VariantDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object>
+		  </div>
+		  <script type='text/javascript'>
+		  var divElement = document.getElementById('viz1611608557047');
+		  var vizElement = divElement.getElementsByTagName('object')[0];
+		  if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.45)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.45)+'px';} else { vizElement.style.width='100%';vizElement.style.height='400px';}
+		  var scriptElement = document.createElement('script');
+		  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+		  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+		  </script>
 
       </div>
     </div>
   </section>
+  <!-- END section -->
+
+  <!-- <div class="container">
+    <div class="probootstrap-cta probootstrap-animate border-bototm-none">
+      <h2 class="mb20">Do you have amazing project in mind? Let's get started.</h2>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      <p><a href="#" role="button" class="btn btn-primary">Get In Touch</a></p>
+    </div>
+  </div> -->
 
   <!-- END section cta -->
 
@@ -229,7 +176,7 @@
         <div class="col-md-6">
           <div class="probootstrap-footer-widget right">
             <ul class="probootstrap-social">
-             <li><a href="https://github.com/supramap/" target="_blank"><i class="icon-github"></i></a></li>
+             <li><a href="https://github.com/janieslab" target="_blank"><i class="icon-github"></i></a></li>
              <li><a href="https://www.facebook.com/unccbioinformaticsandgenomics/" target="_blank"><i class="icon-facebook2"></i></a></li>
              <li><a href="https://www.instagram.com/uncc_bioinformatics/" target="_blank"><i class="icon-instagram2"></i></a></li>
             </ul>
