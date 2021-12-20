@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
@@ -142,12 +143,12 @@
             </div>
             </div>-->
               
-           <!--<div class="probootstrap-card-text">
+              <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading mb0">Bioinformatics Research Associate</h2>
                   <p class="category"><i>Bioinformatics Research Center</i></p>
                   <p>The successful applicant's primary responsibilities will include database development and management, as well as design and implementation of workflows in genetics and biology in multiple languages, including R, Java, Python, and React.js. The Associate will also have the opportunity to collaborate with researchers at the University on a variety of projects.</p>
                   <p><a href="https://jobs.uncc.edu/postings/32253"  target="_blank" role="button" class="btn btn-primary btn-sm">Apply now!</a></p>
-            </div>-->
+            </div>
             </div>
           </div>
 
